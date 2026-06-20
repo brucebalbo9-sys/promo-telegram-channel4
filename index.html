@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Алевтина: кухни без дорогих ошибок и нейросети без ерунды</title>
+    <meta name="description" content="Мой канал о кухнях на заказ, честных дизайнерских решениях и понятных экспериментах с нейросетями.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Кухни без дорогих ошибок. Нейросети без заумной ерунды">
+    <meta property="og:description" content="Интерактивная презентация Telegram-канала Алевтины о кухнях, дизайне и ИИ.">
+    <meta property="og:image" content="og-cover.jpg">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#inside">Перейти к содержанию</a>
+
+    <header class="topbar" aria-label="Навигация">
+      <a class="brand" href="#top" aria-label="К началу страницы">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span>Алевтина</span>
+      </a>
+      <nav class="nav" aria-label="Разделы сайта">
+        <a href="#inside">Темы</a>
+        <a href="#quiz">Мини-тест</a>
+        <a href="#best">Лучшее</a>
+      </nav>
+      <a class="topbar__button" data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">Telegram</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__mobile-photo" aria-hidden="true">
+          <img src="assets/site/author.jpg" alt="">
+        </div>
+        <div class="hero__content reveal">
+          <p class="eyebrow">Мой канал о кухнях и нейросетях</p>
+          <h1 id="hero-title">Кухни без дорогих ошибок. Нейросети без заумной ерунды</h1>
+          <p class="hero__lead">
+            Показываю реальные проекты, честно предупреждаю о промахах в кухне и простым языком разбираю ИИ для работы и жизни.
+          </p>
+          <p class="hero__note">
+            Внутри - реальные проекты, понятные советы дизайнера и эксперименты с нейросетями без скучной теории.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--light" href="#inside">Посмотреть, что внутри</a>
+            <a class="button button--accent" data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">Подписаться на канал</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="author-strip" aria-label="Кто ведет канал">
+        <div class="container author-strip__inner">
+          <div>
+            <p class="section-kicker">Кто я</p>
+            <h2>Меня зовут Алевтина. Я дизайнер кухонь на заказ. И специалист по нейросетям.</h2>
+          </div>
+          <p>
+            Работаю с планировкой, эргономикой, фасадами, материалами и визуализацией кухонь. Показываю реальные проекты и объясняю, где клиент рискует потерять деньги или получить неудобную кухню.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--choice" id="inside">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-kicker">Выберите свой вход</p>
+            <h2>Что вам сейчас ближе?</h2>
+          </div>
+
+          <div class="choice">
+            <div class="choice__tabs reveal" role="tablist" aria-label="Темы канала">
+              <button class="choice__button is-active" type="button" data-topic="kitchen" aria-pressed="true">Я выбираю кухню</button>
+              <button class="choice__button" type="button" data-topic="ai" aria-pressed="false">Мне интересны нейросети</button>
+              <button class="choice__button" type="button" data-topic="all" aria-pressed="false">Мне нужно всё. Я человек сложный</button>
+            </div>
+
+            <article class="topic-panel reveal" id="topic-panel" aria-live="polite"></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--quiz" id="quiz">
+        <div class="container quiz-layout">
+          <div class="section-head reveal">
+            <p class="section-kicker">Мини-тест</p>
+            <h2>Что сейчас портит вам жизнь сильнее?</h2>
+          </div>
+
+          <div class="quiz reveal" aria-label="Мини-тест">
+            <div class="quiz__options">
+              <button type="button" class="quiz__option" data-answer="choose">не понимаю, какую кухню выбрать</button>
+              <button type="button" class="quiz__option" data-answer="mistake">боюсь допустить дорогую ошибку</button>
+              <button type="button" class="quiz__option" data-answer="repair">делаю ремонт, но глаза разбегаются</button>
+              <button type="button" class="quiz__option" data-answer="ai-start">хочу освоить нейросети, но ничего не понимаю</button>
+              <button type="button" class="quiz__option" data-answer="images">хочу создавать красивые изображения</button>
+              <button type="button" class="quiz__option" data-answer="experiments">просто люблю интересные эксперименты</button>
+            </div>
+            <div class="quiz__result" id="quiz-result" aria-live="polite">
+              <span>Выберите вариант - и получите быстрый маршрут по каналу. Без диагноза, просто по-человечески.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="best">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-kicker">Лучшее из канала</p>
+            <h2>8 тем, ради которых стоит заглянуть</h2>
+          </div>
+
+          <div class="card-grid">
+            <a class="content-card reveal" data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">
+              <img src="assets/site/kitchen-01.jpg" alt="Светлая кухня с круглым столом" loading="lazy">
+              <span class="content-card__tag">Планировка</span>
+              <h3>Кухня, где все открывается и не бесит</h3>
+              <p>Про проходы, хранение, рабочие зоны и решения, которые заметны не на картинке, а утром в понедельник.</p>
+              <span class="content-card__link">Смотреть в канале</span>
+            </a>
+
+            <a class="content-card reveal" data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">
+              <img src="assets/site/kitchen-03.jpg" alt="Кухня с каменной фактурой и теплым светом" loading="lazy">
+              <span class="content-card__tag">Материалы</span>
+              <h3>Фасады без паники у стенда</h3>
+              <p>Как смотреть на цвет, фактуру и практичность так, чтобы выбор не превратился в бесконечный ремонтный сериал.</p>
+              <span class="content-card__link">Смотреть в канале</span>
+            </a>
+
+            <a class="content-card reveal" data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">
+              <img src="assets/site/ai-01-after.jpg" alt="Кухня после ИИ-визуализации" loading="lazy">
+              <span class="content-card__tag">До/после</span>
+              <h3>Когда пустая комната начинает говорить</h3>
+              <p>Показываю, как ИИ-визуализация помогает быстро поймать настроение и понять, куда двигаться дальше.</p>
+              <span class="content-card__link">Смотреть в канале</span>
+            </a>
+
+            <a class="content-card reveal" data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">
+              <img src="assets/site/ai-03.jpg" alt="Визуальный эксперимент с заметками и морским пейзажем" loading="lazy">
+              <span class="content-card__tag">Эксперименты</span>
+              <h3>Картинки, которые задают настроение</h3>
+              <p>Не только кухни: визуальные идеи, атмосфера, нейросети и мой честный вопрос «а это вообще работает?».</p>
+              <span class="content-card__link">Смотреть в канале</span>
+            </a>
+
+            <a class="content-card reveal" data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">
+              <img src="assets/site/ai-05.jpg" alt="Кухня, созданная как визуальный эксперимент с ИИ" loading="lazy">
+              <span class="content-card__tag">ИИ-кухни</span>
+              <h3>Красиво - да. А жить как?</h3>
+              <p>Я смотрю на нейрокартинки глазами дизайнера: где вдохновение, а где картинка забыла про реальность.</p>
+              <span class="content-card__link">Смотреть в канале</span>
+            </a>
+
+            <a class="content-card reveal" data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">
+              <img src="assets/site/ai-02-after.jpg" alt="Визуальный эксперимент с закатным пейзажем" loading="lazy">
+              <span class="content-card__tag">Нейросети</span>
+              <h3>ИИ без заумной ерунды</h3>
+              <p>Тестирую инструменты на практике и показываю, что можно применить в работе, жизни и визуальных идеях.</p>
+              <span class="content-card__link">Смотреть в канале</span>
+            </a>
+
+            <a class="content-card reveal" data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">
+              <img src="assets/site/author.jpg" alt="Алевтина за рабочим столом" loading="lazy">
+              <span class="content-card__tag">Личное</span>
+              <h3>Автор, которого слышно</h3>
+              <p>Без безличного «экспертного голоса»: по делу, с характером, теплом и аккуратным чувством юмора.</p>
+              <span class="content-card__link">Смотреть в канале</span>
+            </a>
+
+            <a class="content-card content-card--contain reveal" data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">
+              <img src="assets/site/ai-04.jpg" alt="Персональный визуальный коллаж про Алевтину" loading="lazy">
+              <span class="content-card__tag">Характер</span>
+              <h3>Эстетика, которая не притворяется скучной</h3>
+              <p>Я веду канал так, как работаю: со вкусом, наблюдательностью, честностью и любовью делать красиво.</p>
+              <span class="content-card__link">Смотреть в канале</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--difference">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-kicker">Чем канал отличается</p>
+            <h2>Не сухой экспертный блог, а живая дизайнерская оптика</h2>
+          </div>
+
+          <div class="difference-grid">
+            <article class="difference-card reveal">
+              <span class="difference-card__mark">01</span>
+              <h3>Реальные проекты вместо безликих картинок</h3>
+            </article>
+            <article class="difference-card reveal">
+              <span class="difference-card__mark">02</span>
+              <h3>Честные советы без давления</h3>
+            </article>
+            <article class="difference-card reveal">
+              <span class="difference-card__mark">03</span>
+              <h3>Предупреждения о дорогих ошибках заранее</h3>
+            </article>
+            <article class="difference-card reveal">
+              <span class="difference-card__mark">04</span>
+              <h3>Сложное - нормальными словами</h3>
+            </article>
+            <article class="difference-card reveal">
+              <span class="difference-card__mark">05</span>
+              <h3>ИИ-эксперименты не для галочки</h3>
+            </article>
+            <article class="difference-card reveal">
+              <span class="difference-card__mark">06</span>
+              <h3>Юмор есть, цирка нет</h3>
+            </article>
+            <article class="difference-card difference-card--wide reveal">
+              <span class="difference-card__mark">07</span>
+              <h3>Видно человека, а не очередной «полезный блог»</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--audience">
+        <div class="container audience">
+          <div class="audience__photo reveal" aria-hidden="true">
+            <img src="assets/site/portrait.jpg" alt="">
+          </div>
+          <div class="audience__content reveal">
+            <p class="section-kicker">Кому пригодится</p>
+            <h2>Если ремонт, кухня или нейросети уже стучатся в голову</h2>
+            <ul class="audience-list">
+              <li>Вы выбираете кухню на заказ и хотите меньше сомневаться.</li>
+              <li>Делаете ремонт и устали от бесконечных «а давайте еще вот так».</li>
+              <li>Хотите понимать планировку, фасады, материалы и визуализацию без словаря дизайнера.</li>
+              <li>Интересуетесь нейросетями, но не хотите начинать с технического тумана.</li>
+              <li>Хотите создавать красивые изображения и видеть живые эксперименты.</li>
+              <li>Любите, когда с вами разговаривают спокойно, честно и без пафоса.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="final" aria-labelledby="final-title">
+        <div class="container final__inner reveal">
+          <p class="section-kicker">Финал без пафоса</p>
+          <h2 id="final-title">Подписывайтесь сейчас, пока я снова не ушла тестировать очередную нейросеть до трёх часов ночи.</h2>
+          <a class="button button--accent button--large" data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">Подписаться на Telegram-канал</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>Алевтина | кухни, дизайн, нейросети</span>
+        <div class="footer__links">
+          <a data-link="telegram" href="https://t.me/Alevtina_designer_Pankova" target="_blank" rel="noopener">Telegram</a>
+          <a data-link="vk-community" href="https://vk.ru/alevtina_kuhni" target="_blank" rel="noopener">ВК-сообщество</a>
+          <a data-link="vk-personal" href="https://vk.ru/dizaineralevtina" target="_blank" rel="noopener">ВК Алевтины</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
